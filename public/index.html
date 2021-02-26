@@ -12,10 +12,10 @@
         <!-- Header -->
         <div class="w-full flex flex-col lg:flex-row">
             <!-- Logo -->
-            <div class="py-2 bg-gray-300">
+            <div class="py-2 bg-themeGreen-default text-white font-title text-3xl">
                 Fancy Flower Shop
             </div>
-            <nav class="bg-gray-200 flex-grow">
+            <nav class="bg-themeGreen-default flex-grow">
                 <ul class="flex flex-col lg:flex-row">
                     <li>Home</li>
                     <li>About</li>
@@ -23,30 +23,38 @@
                 </ul>
             </nav>
         </div>
-        <!-- Banner graphic -->
-        <!-- <span>Photo by <a href="https://unsplash.com/@mrrrk_smith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John-Mark Smith</a> on <a href="https://unsplash.com/s/photos/flowers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
-        <div class="bg-blue-500 bg-cover h-96">
-        </div>
+        <!-- Banner section -->
+        <!-- Photo by <a href="https://unsplash.com/@mrrrk_smith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John-Mark Smith</a> -->
+        <section class="bg-banner-image bg-cover h-96 relative">
+            <span class="bg-themeBlue-default absolute top-50 ml-5 font-title text-5xl text-gray-50 p-2 opacity-80">Flowers for every occasion.</span>
+            <span class="bg-themeGreen-default absolute top-150 ml-5 font-title text-5xl text-gray-50 p-2 opacity-80">Same day delivery.</span>
+        </section>
         <!-- Introduction -->
-        <div class="flex">
+        <section class="flex justify-center">
             <div class="w-11/12 py-10 text-center">
-                <h2 class="text-xl pb-3 text-gray-500">Welcome to our flower shop</h2>
-                This will contain some text about the shop
+                <h2 class="text-xl pb-3 text-themeBlue-default font-title text-5xl">Welcome to our flower shop</h2>
+                <p>
+                    Ever since we first opened in 1993, our shop has been the go-to flower delivery service in Norwich. We deliver only the finest quality!
+                    Contact us for all your floral needs!
+                </p>
             </div>
             
-        </div>
-        <!-- Section cards -->
-        <div class="bg-gray-300 flex flex-col lg:flex-row items-center lg:justify-center lg:pb-3">
+        </section>
+        <!-- Cards section -->
+        <section class="bg-themeGreen-default flex flex-col lg:flex-row items-center lg:justify-center lg:pb-3">
             <div class="h-40 bg-gray-100 w-10/12 max-w-sm mt-2 lg:mx-4 p-2">
-                Custom orders<br>Custom Plants- Contact us with the size and type of plant you are after, including the style of pot.
+                <h3 class="text-themeBlue-default font-title text-4xl">Custom orders</h3>
+                Contact us with the size and type of plant you are after, including the style of pot.
             </div>
             <div class="h-40 bg-gray-100 w-10/12 max-w-sm mt-2 lg:mx-4 p-2">
-                Unique bouqets!<br>Type in your preferences regarding specific colors, style or types of flowers and we'll put your perfect bouqet together! 
+                <h3 class="text-themeBlue-default font-title text-4xl">Unique bouqets!</h3>
+                Type in your preferences regarding specific colors, style or types of flowers and we'll put your perfect bouqet together! 
             </div>
             <div class="h-40 bg-gray-100 w-10/12 max-w-sm mt-2 lg:mx-4 mb-2 lg:mb-0 p-2">
-                Occasions<br>Whatever the occasion, we'll have the flowers you are looking for.
+                <h3 class="text-themeBlue-default font-title text-4xl">Occasions</h3>
+                Whatever the occasion, we'll have the flowers you are looking for.
             </div>
-        </div>
+        </section>
         <footer class="text-center py-2">
             &#169 Fancy Flower Shop 2021
         </footer>
