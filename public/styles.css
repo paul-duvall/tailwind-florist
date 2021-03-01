@@ -28996,6 +28996,96 @@ video {
           animation: bounce 1s infinite;
 }
 
+.logo-container {
+  --tw-bg-opacity: 1;
+  background-color: rgba(88, 175, 185, var(--tw-bg-opacity));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Amatic SC;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.nav {
+  --tw-bg-opacity: 1;
+  background-color: rgba(88, 175, 185, var(--tw-bg-opacity));
+  flex-grow: 1;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .nav{
+    display: block;
+  }
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .nav ul{
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0.75rem;
+  }
+}
+
+.nav-item {
+  padding-bottom: 0.5rem;
+}
+
+.nav-item:hover{
+  --tw-text-opacity: 1;
+  color: rgba(229, 231, 235, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .nav-item{
+    padding-bottom: 0px;
+  }
+}
+
+.banner-text-top {
+  --tw-bg-opacity: 1;
+  background-color: rgba(89, 137, 191, var(--tw-bg-opacity));
+  font-family: Amatic SC;
+  font-size: 3rem;
+  line-height: 1;
+  margin-left: 1.25rem;
+  opacity: 0.8;
+  padding: 0.5rem;
+  position: absolute;
+  top: 50px;
+  --tw-text-opacity: 1;
+  color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+
+.banner-text-bottom {
+  --tw-bg-opacity: 1;
+  background-color: rgba(88, 175, 185, var(--tw-bg-opacity));
+  font-family: Amatic SC;
+  font-size: 3rem;
+  line-height: 1;
+  margin-left: 1.25rem;
+  opacity: 0.8;
+  padding: 0.5rem;
+  position: absolute;
+  top: 150px;
+  --tw-text-opacity: 1;
+  color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

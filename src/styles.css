@@ -3,3 +3,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo-container {
+    @apply py-2 bg-themeGreen-default text-white font-title text-3xl flex flex-row justify-between;
+}
+
+.nav {
+    @apply bg-themeGreen-default flex-grow md:block text-center;
+}
+
+.nav ul {
+    @apply flex flex-col md:flex-row md:justify-end md:mt-3 text-lg text-white;
+}
+
+.nav-item {
+    @apply pb-2 md:pb-0 hover:text-gray-200;
+}
+
+.banner-text-top {
+    @apply bg-themeBlue-default absolute top-50 ml-5 font-title text-5xl text-gray-50 p-2 opacity-80;
+}
+
+.banner-text-bottom {
+    @apply bg-themeGreen-default absolute top-150 ml-5 font-title text-5xl text-gray-50 p-2 opacity-80;
+}
