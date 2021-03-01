@@ -7,35 +7,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="h-full bg-grey-100">
-    <div class="container mx-auto h-full">
+<body class="h-full w-full bg-grey-100">
+    <!-- mx-auto  -->
+    <div class="w-full h-full">
         <!-- Header -->
-        <div class="w-full flex flex-col lg:flex-row">
+        <div class="w-full flex flex-col md:flex-row">
             <!-- Logo -->
-            <div class="py-2 bg-themeGreen-default text-white font-title text-3xl">
-                Fancy Flower Shop
+            <div class="logo-container">
+                <a href="#" class="ml-3 md:ml-5">Fancy Flower Shop</a>
+                <div class="md:hidden cursor-pointer mr-3" id="menu-burger">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </div>
             </div>
-            <nav class="bg-themeGreen-default flex-grow">
-                <ul class="flex flex-col lg:flex-row">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Shop</li>
+            <nav class="nav hidden" id="menu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#" class="border-b-2 hover:border-gray-200">Home</a>
+                    </li>
+                    <li class="nav-item md:pl-16">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="nav-item md:pl-16 md:mr-5">
+                        <a href="#">Shop</a>
+                    </li>
                 </ul>
             </nav>
         </div>
         <!-- Banner section -->
         <!-- Photo by <a href="https://unsplash.com/@mrrrk_smith?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">John-Mark Smith</a> -->
         <section class="bg-banner-image bg-cover h-96 relative">
-            <span class="bg-themeBlue-default absolute top-50 ml-5 font-title text-5xl text-gray-50 p-2 opacity-80">Flowers for every occasion.</span>
-            <span class="bg-themeGreen-default absolute top-150 ml-5 font-title text-5xl text-gray-50 p-2 opacity-80">Same day delivery.</span>
+            <span class="banner-text-top">Flowers for every occasion.</span>
+            <span class="banner-text-bottom">Same day delivery.</span>
         </section>
         <!-- Introduction -->
         <section class="flex justify-center">
-            <div class="w-11/12 py-10 text-center">
+            <div class="mx-5 md:max-w-3xl py-10 text-center">
                 <h2 class="text-xl pb-3 text-themeBlue-default font-title text-5xl">Welcome to our flower shop</h2>
                 <p>
                     Ever since we first opened in 1993, our shop has been the go-to flower delivery service in Norwich. We deliver only the finest quality!
-                    Contact us for all your floral needs!
+                        Contact us for all your floral needs!
                 </p>
             </div>
             
@@ -60,4 +72,5 @@
         </footer>
     </div>
 </body>
+<script src="app.js"></script>
 </html>
