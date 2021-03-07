@@ -11,10 +11,13 @@ module.exports = {
         default: '#f46e6d'
       },
       themeGreen: {
-        default: '#58afb9'
+        default: '#BCDFE3'
       },
       themeBlue: {
         default: '#5989bf'
+      },
+      cardBackground: {
+        default: 'rgba(243, 244, 246, .8)'
       },
       black: colors.black,
       white: colors.white,
