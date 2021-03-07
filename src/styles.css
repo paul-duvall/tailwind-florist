@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .logo-container {
-    @apply py-2 bg-themeGreen-default text-white font-title text-3xl flex flex-row justify-between;
+    @apply py-2 bg-themeGreen-default text-themeBlue-default font-title text-3xl flex flex-row justify-between;
 }
 
 .nav {
@@ -21,9 +21,21 @@
 }
 
 .banner-text-top {
-    @apply bg-themeBlue-default absolute top-50 ml-5 font-title text-5xl text-gray-50 p-2 opacity-80;
+    @apply bg-themeBlue-default absolute top-50 ml-3 md:ml-10 font-title text-5xl text-gray-50 p-2 opacity-80;
 }
 
 .banner-text-bottom {
-    @apply bg-themeGreen-default absolute top-150 ml-5 font-title text-5xl text-gray-50 p-2 opacity-80;
+    @apply bg-themeGreen-default absolute top-150 ml-3 md:ml-10 font-title text-5xl text-gray-50 p-2 opacity-90;
+}
+
+.card {
+    @apply flex flex-col items-center px-2 lg:mx-4 mt-6 lg:mt-0 bg-cardBackground-default max-w-sm h-60 rounded-lg text-center;
+}
+
+.card-title {
+    @apply mt-4 font-bold text-themeBlue-default font-title text-4xl;
+}
+
+.card-button {
+    @apply px-3 py-1 my-4 w-40 border-themeBlue-default border-2 rounded-md text-themeBlue-default hover:text-white hover:bg-themeBlue-default;
 }

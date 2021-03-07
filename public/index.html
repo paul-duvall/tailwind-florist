@@ -7,14 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="h-full w-full bg-grey-100">
+<body class="h-full w-full bg-grey-100 text-gray-600">
     <!-- mx-auto  -->
     <div class="w-full h-full">
         <!-- Header -->
         <div class="w-full flex flex-col md:flex-row">
             <!-- Logo -->
             <div class="logo-container">
-                <a href="#" class="ml-3 md:ml-5">Fancy Flower Shop</a>
+                <a href="#" class="ml-3 md:ml-10">Fancy Flower Shop</a>
                 <div class="md:hidden cursor-pointer mr-3" id="menu-burger">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -44,28 +44,35 @@
         <!-- Introduction -->
         <section class="flex justify-center">
             <div class="mx-5 md:max-w-3xl py-10 text-center">
-                <h2 class="text-xl pb-3 text-themeBlue-default font-title text-5xl">Welcome to our flower shop</h2>
-                <p>
-                    Ever since we first opened in 1993, our shop has been the go-to flower delivery service in Norwich. We deliver only the finest quality!
-                        Contact us for all your floral needs!
-                </p>
+                <h2 class="text-xl text-themeBlue-default font-title text-5xl">Welcome to our flower shop</h2>
+                <p class="pt-6">Ever since we first opened in 1993, our shop has been the go-to flower delivery service in Norwich. 
+                    We deliver only the finest quality!</p>
+                <p class="pt-6">Some more text about flowers. Blah blah blah flowers.
+                    Here's some more stuff about flowers. We just really like flowers, you know? Contact us for all your floral needs!</p>
             </div>
             
         </section>
         <!-- Cards section -->
-        <section class="bg-themeGreen-default flex flex-col lg:flex-row items-center lg:justify-center lg:pb-3">
-            <div class="h-40 bg-gray-100 w-10/12 max-w-sm mt-2 lg:mx-4 p-2">
-                <h3 class="text-themeBlue-default font-title text-4xl">Custom orders</h3>
-                Contact us with the size and type of plant you are after, including the style of pot.
+        <section class="lg:py-12 flex flex-col lg:flex-row items-center lg:justify-center bg-themeGreen-default">
+            
+            <div class="card">
+                <h3 class="card-title">Custom orders</h3>
+                <p class="mt-4">Contact us with the size and type of plant you are after, including the style of pot and we'll get to work!</p>
+                <button class="card-button">Start your order</button>
             </div>
-            <div class="h-40 bg-gray-100 w-10/12 max-w-sm mt-2 lg:mx-4 p-2">
-                <h3 class="text-themeBlue-default font-title text-4xl">Unique bouqets!</h3>
-                Type in your preferences regarding specific colors, style or types of flowers and we'll put your perfect bouqet together! 
+            
+            <div class="card">
+                <h3 class="card-title">Unique bouqets!</h3>
+                <p class="mt-4">Type in your preferences regarding specific colors, style or types of flowers and we'll put your perfect bouqet together!</p>
+                <button class="card-button">Bouqets</button>
             </div>
-            <div class="h-40 bg-gray-100 w-10/12 max-w-sm mt-2 lg:mx-4 mb-2 lg:mb-0 p-2">
-                <h3 class="text-themeBlue-default font-title text-4xl">Occasions</h3>
-                Whatever the occasion, we'll have the flowers you are looking for.
+            
+            <div class="card mb-4 lg:mb-0">
+                <h3 class="card-title">Occasions</h3>
+                <p class="mt-4">Whatever the occasion, we'll have the flowers you are looking for. Select from our range of stylish designs.</p>
+                <button class="card-button">Occasions</button>
             </div>
+
         </section>
         <footer class="text-center py-2">
             &#169 Fancy Flower Shop 2021
